@@ -3,7 +3,6 @@ package br.com.canella.localapi.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.canella.localapi.entity.IotData;
@@ -14,7 +13,6 @@ public class DatabaseService implements PersistenceService {
 
     private final IotDataRepository iotDataRepository;
 
-    @Autowired
     public DatabaseService(IotDataRepository iotDataRepository) {
         this.iotDataRepository = iotDataRepository;
     }
